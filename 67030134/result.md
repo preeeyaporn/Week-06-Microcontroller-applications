@@ -275,6 +275,131 @@ Executing "ninja size-files"...
 │ spi_bus_lock.c.obj                  │          4 │    0 │    0 │     0 │    0 │     0 │        0 │          0 │     0 │          4 │       4 │        0 │        0 │           0 │        0 │                  0 │
 └─────────────────────────────────────┴────────────┴──────┴──────┴───────┴──────┴───────┴──────────┴────────────┴───────┴────────────┴─────────┴──────────┴──────────┴─────────────┴──────────┴────────────────────┘
 ```
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/f085388a-d641-4e3b-944d-b5228464120b" />
+
+```c
+Adding SPI flash device
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x12 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6372
+load:0x40078000,len:15928
+load:0x40080400,len:3880
+entry 0x40080638
+I (1426) boot: ESP-IDF v6.0-dev-1002-gbfe5caf58f 2nd stage bootloader
+I (1428) boot: compile time Aug  6 2025 08:58:00
+I (1429) boot: Multicore bootloader
+I (2391) boot: chip revision: v3.0
+I (2396) boot.esp32: SPI Speed      : 40MHz
+I (2397) boot.esp32: SPI Mode       : DIO
+I (2398) boot.esp32: SPI Flash Size : 2MB
+I (2519) boot: Enabling RNG early entropy source...
+I (2644) boot: Partition Table:
+I (2644) boot: ## Label            Usage          Type ST Offset   Length
+I (2645) boot:  0 nvs              WiFi data        01 02 00009000 00006000
+I (2647) boot:  1 phy_init         RF data          01 01 0000f000 00001000
+I (2648) boot:  2 factory          factory app      00 00 00010000 00100000
+I (2764) boot: End of partition table
+I (3700) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=09534h ( 38196) map
+I (4164) esp_image: segment 1: paddr=0001955c vaddr=3ff80000 size=00024h (    36) load
+I (4618) esp_image: segment 2: paddr=00019588 vaddr=3ffb0000 size=025e0h (  9696) load
+I (5094) esp_image: segment 3: paddr=0001bb70 vaddr=40080000 size=044a8h ( 17576) load
+I (5545) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=0efb8h ( 61368) map
+I (6002) esp_image: segment 5: paddr=0002efe0 vaddr=400844a8 size=08b10h ( 35600) load
+I (7579) boot: Loaded app from partition at offset 0x10000
+I (7580) boot: Disabling RNG early entropy source...
+I (7749) cpu_start: Multicore app
+I (14862) cpu_start: Pro cpu start user code
+I (14865) cpu_start: cpu freq: 160000000 Hz
+I (14867) app_init: Application information:
+I (14867) app_init: Project name:     lab6_1_basic_build
+I (14869) app_init: App version:      1
+I (14869) app_init: Compile time:     Aug  9 2025 13:50:34
+I (14870) app_init: ELF file SHA256:  0200db97f...
+I (14870) app_init: ESP-IDF:          v6.0-dev-1002-gbfe5caf58f
+I (14871) efuse_init: Min chip rev:     v0.0
+I (14871) efuse_init: Max chip rev:     v3.99
+I (14872) efuse_init: Chip rev:         v3.0
+I (14874) heap_init: Initializing. RAM available for dynamic allocation:
+I (14876) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM
+I (14879) heap_init: At 3FFB2EA8 len 0002D158 (180 KiB): DRAM
+I (14880) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM
+I (14881) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM
+I (14882) heap_init: At 4008CFB8 len 00013048 (76 KiB): IRAM
+I (14998) spi_flash: detected chip: winbond
+I (15011) spi_flash: flash io: dio
+I (15031) main_task: Started on CPU0
+I (15041) main_task: Calling app_main()
+I (15041) LAB1: === Build Information ===
+I (15041) LAB1: Project Name: lab6_1_basic_build
+I (15041) LAB1: ESP-IDF Version: v6.0-dev-1002-gbfe5caf58f
+I (15041) LAB1: Compile Date: Aug  9 2025
+I (15051) LAB1: Compile Time: 14:00:00
+I (15051) LAB1: Chip Model: esp32
+I (15051) LAB1: Free Heap: 304636 bytes
+I (15051) LAB1: Running... Counter: 0
+I (16051) LAB1: Running... Counter: 1
+I (17051) LAB1: Running... Counter: 2
+I (18051) LAB1: Running... Counter: 3
+I (19051) LAB1: Running... Counter: 4
+I (20051) LAB1: Running... Counter: 5
+I (21051) LAB1: Running... Counter: 6
+I (22051) LAB1: Running... Counter: 7
+I (23051) LAB1: Running... Counter: 8
+I (24051) LAB1: Running... Counter: 9
+I (24051) LAB1: Current free heap: 304636 bytes
+I (25051) LAB1: Running... Counter: 10
+I (26051) LAB1: Running... Counter: 11
+I (27051) LAB1: Running... Counter: 12
+I (28051) LAB1: Running... Counter: 13
+I (29051) LAB1: Running... Counter: 14
+I (30051) LAB1: Running... Counter: 15
+I (31051) LAB1: Running... Counter: 16
+I (32051) LAB1: Running... Counter: 17
+I (33051) LAB1: Running... Counter: 18
+I (34051) LAB1: Running... Counter: 19
+I (34051) LAB1: Current free heap: 304636 bytes
+I (35051) LAB1: Running... Counter: 20
+I (36051) LAB1: Running... Counter: 21
+I (37051) LAB1: Running... Counter: 22
+I (38051) LAB1: Running... Counter: 23
+I (39051) LAB1: Running... Counter: 24
+I (40051) LAB1: Running... Counter: 25
+I (41051) LAB1: Running... Counter: 26
+I (42051) LAB1: Running... Counter: 27
+I (43051) LAB1: Running... Counter: 28
+I (44051) LAB1: Running... Counter: 29
+I (44051) LAB1: Current free heap: 304636 bytes
+I (45051) LAB1: Running... Counter: 30
+I (46051) LAB1: Running... Counter: 31
+I (47051) LAB1: Running... Counter: 32
+I (48051) LAB1: Running... Counter: 33
+I (49051) LAB1: Running... Counter: 34
+I (50051) LAB1: Running... Counter: 35
+I (51051) LAB1: Running... Counter: 36
+I (52051) LAB1: Running... Counter: 37
+I (53051) LAB1: Running... Counter: 38
+I (54051) LAB1: Running... Counter: 39
+I (54051) LAB1: Current free heap: 304636 bytes
+I (55051) LAB1: Running... Counter: 40
+I (56051) LAB1: Running... Counter: 41
+I (57051) LAB1: Running... Counter: 42
+I (58051) LAB1: Running... Counter: 43
+I (59051) LAB1: Running... Counter: 44
+I (60051) LAB1: Running... Counter: 45
+I (61051) LAB1: Running... Counter: 46
+I (62051) LAB1: Running... Counter: 47
+I (63051) LAB1: Running... Counter: 48
+I (64051) LAB1: Running... Counter: 49
+I (64051) LAB1: Current free heap: 304636 bytes
+I (65051) LAB1: Running... Counter: 50
+I (66051) LAB1: Running... Counter: 51
+I (67051) LAB1: Running... Counter: 52
+```
+
 ```C
 1) Docker vs Native
 Docker ลงง่าย ไม่ปวดหัวเรื่องเวอร์ชัน เครื่องใครก็ build เหมือนกัน
@@ -299,5 +424,6 @@ Mount → ไฟล์โค้ดอยู่, tools ใน image อยู่
 Docker: สะดวก, เหมือนกันทุกเครื่อง
 Native: เร็วกว่า แต่เซ็ตยากกว่า
 ``` 
+
 
 
